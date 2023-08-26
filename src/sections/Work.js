@@ -1,6 +1,19 @@
 import React from 'react';
 
-const Work = ({ projects }) => {
+const Work = () => {
+  const projects = [
+    {
+      title: 'Portfolio Website',
+      description: 'Designed and developed my personal portfolio website using React and Tailwind CSS.',
+      url: 'https://www.example.com/portfolio',
+    },
+    {
+      title: 'E-Commerce App',
+      description: 'Built a full-stack e-commerce application with React, Node.js, and MongoDB.',
+      url: 'https://www.example.com/ecommerce',
+    },
+   
+  ];
   return (
     <section id="work-projects" className="py-12">
       <div className="max-w-6xl mx-auto">

@@ -1,6 +1,17 @@
 import React from 'react';
 
-const Skills = ({ skills }) => {
+const Skills = () => {
+  const skills = [
+    {
+      title: 'Web Development',
+      description: 'Proficient in HTML, CSS, and JavaScript. Experienced with React and Tailwind CSS.',
+    },
+    {
+      title: 'UI/UX Design',
+      description: 'Skilled in creating intuitive and visually appealing user interfaces.',
+    },
+    
+  ];
   return (
     <section id="skills" className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto">
