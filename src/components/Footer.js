@@ -6,7 +6,7 @@ const Footer = () => {
     { title: "Home", link: "#" },
     { title: "About", link: "#about" },
     { title: "Skills", link: "#skills" },
-    { title: "Work & Projects", link: "#work-projects" },
+    { title: "Work & Projects", link: "#work" },
     { title: "Contact", link: "#contact" },
   ];
 

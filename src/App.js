@@ -10,8 +10,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
+    <div className="App scroll-smooth">
+    <Navbar/>
      <Home/>
      <About/>
      <Skills />
