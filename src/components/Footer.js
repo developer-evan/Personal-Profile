@@ -29,7 +29,7 @@ const Footer = () => {
       contact: "(123) 456-7890" },
   ];
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-8 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between">
         <div className="md:w-1/4 mb-6 md:mb-0 items-start text-start">
           <h4 className="text-lg font-semibold mb-4">Menu</h4>
