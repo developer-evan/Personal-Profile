@@ -5,12 +5,12 @@ const Work = () => {
     {
       title: 'Portfolio Website',
       description: 'Designed and developed my personal portfolio website using React and Tailwind CSS.',
-      url: 'https://www.example.com/portfolio',
+      url: 'https://developer-evan-profile.vercel.app/',
     },
     {
       title: 'E-Commerce App',
-      description: 'Built a full-stack e-commerce application with React, Node.js, and MongoDB.',
-      url: 'https://www.example.com/ecommerce',
+      description: 'Built a full-stack e-commerce application with Next, Node.js, and MongoDB.',
+      url: 'https://online-shoe-shop.vercel.app/',
     },
    
   ];
