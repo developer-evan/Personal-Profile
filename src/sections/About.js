@@ -31,7 +31,10 @@ function About() {
 
           </div>
           <button className="bg-sky-600 flex items-center text-white p-2 mt-6">
-            Check out my Projects <FaArrowRight className="ml-2" />
+          <a href='#work-projects'  > 
+          Check out my Projects <FaArrowRight className="ml-2" />
+        </a>
+            
           </button>
         </div>
         <div className="hidden md:block md:w-1/2">
