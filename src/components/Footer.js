@@ -3,10 +3,10 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaWhatsapp,FaEnvelope, FaP
 
 const Footer = () => {
   const menuItems = [
-    { title: "Home", link: "#" },
+    { title: "Home", link: "#home" },
     { title: "About", link: "#about" },
     { title: "Skills", link: "#skills" },
-    { title: "Work & Projects", link: "#work" },
+    { title: "Work & Projects", link: "#work-projects" },
     { title: "Contact", link: "#contact" },
   ];
 
@@ -29,6 +29,7 @@ const Footer = () => {
       contact: "(123) 456-7890" },
   ];
   return (
+    <section id="contact">
     <footer className="bg-gray-800 text-white py-8 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between">
         <div className="md:w-1/4 mb-6 md:mb-0 items-start text-start">
@@ -68,6 +69,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </section>
   );
 };
 

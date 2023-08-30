@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+// import { Link } from 'react-router-dom';
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -7,10 +7,14 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <div className='md:flex md:justify-between md:items-center bg-slate-300 md:px-4'>
+    <div className='fixed top-0 w-full bg-slate-300 md:flex md:justify-between md:items-center md:px-4'>
       <header className='flex justify-between p-3 items-center '>
-        <h2 className='font-bold text-sky-600 text-2xl'>Developer-evan</h2>
+        <h2 className='font-bold text-sky-600 text-lg md:text-2xl'>Developer-evan</h2>
         <button
           className='block md:hidden bg-slate-300 p-2'
           onClick={toggleMenu}
@@ -42,13 +46,36 @@ function Navbar() {
       <ul
         className={`${
           menuOpen ? 'block' : 'hidden'
-        } md:flex md:w-auto bg-slate-300 p-4 md:p-0 md:static md:space-x-4`}
+        } md:flex md:w-auto text-start bg-slate-300 p-4 md:p-0 md:static md:space-x-4`}
       >
-        <li className='mx-4 font-bold'>Home</li>
-        <li className='mx-4 font-bold'>Work</li>
-        <li className='mx-4 font-bold'>Skills</li>
-        <li className='mx-4 font-bold'>About</li>
-        <li className='mx-4 font-bold'>Contact</li>
+     <a href='#home'  >      
+      <li className='mx-4 font-bold' onClick={closeMenu}>
+          Home
+        </li>
+        </a>
+
+        <a href='#work-projects'  > 
+        <li className='mx-4 font-bold' onClick={closeMenu}>
+          Work
+        </li>
+        </a>
+        <a href='#skills'  > 
+        <li className='mx-4 font-bold' onClick={closeMenu}>
+          Skills
+        </li>
+        </a>
+        <a href='#about'  > 
+        <li className='mx-4 font-bold' onClick={closeMenu}>
+          About
+        </li>
+        </a>
+        <a href='#contact'  > 
+        <li className='mx-4 font-bold' onClick={closeMenu}>
+          Contact
+        </li>
+        </a>
+
+
       </ul>
       <button className='hidden md:block bg-sky-600 text-white px-3 py-1'>
         Resume

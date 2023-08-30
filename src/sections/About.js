@@ -3,7 +3,8 @@ import { FaArrowRight } from "react-icons/fa";
 
 function About() {
   return (
-    <div className="flex justify-center items-center h-screen bg-slate-300">
+   <section id="about">
+     <div className="flex justify-center items-center h-screen bg-slate-300">
       <div className="w-full max-w-5xl p-6 bg-slate-300 rounded-lg shadow-md flex flex-wrap">
         <div className="w-full md:w-1/2 md:pr-6">
           <h1 className="text-sky-600 text-4xl">About</h1>
@@ -22,7 +23,7 @@ function About() {
             My expertise lies in frontend development, software architecture, and creating scalable solutions. 
             I excel at designing user-friendly interfaces that offer exceptional experiences.
             I'm adaptable to both small and large teams and have the ability to choose the best tools for each project.
-            My commitment to high-quality code and consistent design principles ensures enhanced reusability across projects.          </p>
+            My commitment to high-quality code and consistent design principles ensures enhanced reusability across projects.</p>
           <div className="mt-4">
             <p className="font-semibold text-gray-800">
               What sets me apart from other candidates:
@@ -44,6 +45,7 @@ function About() {
         </div>
       </div>
     </div>
+   </section>
   );
 }
 
