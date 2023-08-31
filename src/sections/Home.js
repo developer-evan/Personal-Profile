@@ -14,7 +14,7 @@ function Home() {
       <div className="items-center justify-center mb-36">
       <p className="mt-28">Lets Build something together</p>
       <h1 className="text-5xl font-bold py-8">
-        Hello I'm <span className="text-sky-600">Evans</span>
+        Hello I'm <span className="text-sky-600">ivan</span>
       </h1>
       <h1 className="text-5xl font-bold">Full Stack Engineer</h1>
       <p className="pt-8">
