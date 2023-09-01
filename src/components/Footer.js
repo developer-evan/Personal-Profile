@@ -22,7 +22,7 @@ const Footer = () => {
   const contactInfo = [
     {
       icon:<FaEnvelope/>,
-      contact: "ivanmogeni254@gmail.com "
+      contact: "Evansmogeni254@gmail.com "
     },
     { 
       icon:<FaPhone/>,

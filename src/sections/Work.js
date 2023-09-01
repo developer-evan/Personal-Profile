@@ -12,6 +12,26 @@ const Work = () => {
       description: 'Built a full-stack e-commerce application with Next, Node.js, and MongoDB.',
       url: 'https://online-shoe-shop.vercel.app/',
     },
+    {
+      title: 'Notepad App',
+      description: 'Developed a notepad application with React Native and Firebase.',
+      url: ' https://codesandbox.io/p/github/developer-evan/notes-taking-app/main?file=/App.js:4,39&workspaceId=681206b5-159c-413f-9793-f3598ea797b1 ',
+    },
+    {
+      title: 'Vessel Global Systems Website',
+      description: 'Designed and developed a website for a company using Next and Tailwind CSS.',
+      url: 'https://www.vesselsystems.co.ke/'
+    },
+    {
+title: 'East Chatbot AI Website',
+description: 'Designed and developed a website for a company using Next Typescript and Tailwind CSS.',
+url: 'https://east-ai.vercel.app/'
+    },
+    {
+      title: 'English Dictionary App',
+      description: 'I developed a dictionary application using React.js and Tailwind CSS, integrating it with a dictionary API. ',
+
+    }
    
   ];
   return (
