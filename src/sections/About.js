@@ -30,7 +30,7 @@ function About() {
                 What sets me apart from other candidates:
               </p>
             </div>
-            <button className="bg-sky-600 rounded-xl  hover:bg-white hover:border hover:border-sky-600  p-2 mt-6">
+            <button className="bg-sky-600 rounded-xl   hover:bg-white hover:text-sky-600 hover:border hover:border-sky-600  p-2 mt-6">
               <a href="#work-projects" className="items-center text-white hover:text-sky-600 flex">
                 Check out my Projects <FaArrowRight className="ml-2" />
               </a>
