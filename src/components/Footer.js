@@ -11,22 +11,22 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaTwitter/>,
-     url: "https://twitter.com/yourusername" },
-    { icon: <FaGithub/>,   url: "https://github.com/yourusername" },
-    { icon: <FaWhatsapp/>,   url: "https://github.com/yourusername" },
-    { icon: <FaFacebook/>,   url: "https://github.com/yourusername" },
-    { icon: <FaLinkedin/>,   url: "https://github.com/yourusername" },
+    // { icon: <FaTwitter/>,
+    //  url: "https://twitter.com/yourusername" },
+    { icon: <FaGithub/>,   url: "https://github.com/developer-evan" },
+    { icon: <FaWhatsapp/>,   url: "https://wa.me/0728366248" },
+    // { icon: <FaFacebook/>,   url: "https://github.com/yourusername" },
+    { icon: <FaLinkedin/>,   url: "https://www.linkedin.com/in/evans-mogeni-a48636235/" },
   ];
 
   const contactInfo = [
     {
       icon:<FaEnvelope/>,
-      contact: "Evansmogeni254@gmail.com "
+      contact: "evansmogeni254@gmail.com "
     },
     { 
       icon:<FaPhone/>,
-      contact: "(123) 456-7890" },
+      contact: "+254 728 366 248" },
   ];
   return (
     <section id="contact">

@@ -7,15 +7,15 @@ const Work = () => {
       description: 'Designed and developed my personal portfolio website using React and Tailwind CSS.',
       url: 'https://developer-evan-profile.vercel.app/',
     },
+    // {
+    //   title: 'E-Commerce App',
+    //   description: 'Built a full-stack e-commerce application with Next, Node.js, and MongoDB.',
+    //   url: 'https://online-shoe-shop.vercel.app/',
+    // },
     {
-      title: 'E-Commerce App',
-      description: 'Built a full-stack e-commerce application with Next, Node.js, and MongoDB.',
-      url: 'https://online-shoe-shop.vercel.app/',
-    },
-    {
-      title: 'Notepad App',
-      description: 'Developed a notepad application with React Native and Firebase.',
-      url: ' https://codesandbox.io/p/github/developer-evan/notes-taking-app/main?file=/App.js:4,39&workspaceId=681206b5-159c-413f-9793-f3598ea797b1 ',
+      title: 'Fitness and Health Monitoring  App',
+      description: 'Developed a mobile  application to enhance workout for fitness and health monitoring with React Native and Firebase.',
+      url: ' https://drive.google.com/file/d/1YahaDYO8bnsoepGUaQNPO7-JCO4E7ZCO/view?usp=sharing',
     },
     {
       title: 'Vessel Global Systems Website',
@@ -23,13 +23,14 @@ const Work = () => {
       url: 'https://www.vesselsystems.co.ke/'
     },
     {
-title: 'East Chatbot AI Website',
+title: 'Cumulus  Website',
 description: 'Designed and developed a website for a company using Next Typescript and Tailwind CSS.',
-url: 'https://east-ai.vercel.app/'
+url: 'https://cumuluske.co.ke/'
     },
     {
-      title: 'English Dictionary App',
-      description: 'I developed a dictionary application using React.js and Tailwind CSS, integrating it with a dictionary API. ',
+      title: 'Unity Solutions Writers Website',
+      description: 'I developed a writers website with admin and user dashboard using React.js and Tailwind CSS, integrating it with a Rest API. ',
+      url: 'https://unitysolutionstutors.com/'
 
     }
    

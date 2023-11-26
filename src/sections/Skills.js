@@ -3,18 +3,18 @@ import React from 'react';
 const Skills = () => {
   const skills = [
     {
-      title: 'Web Development',
+      title: 'Frontend Web Development',
       description: 'Proficient in HTML, CSS, and JavaScript. Experienced with React, Next, Angular and Tailwind CSS.',
     },
-    {
-      title: 'UI/UX Design',
-      description: 'Skilled in creating intuitive and visually appealing user interfaces.',
-    },
+    // {
+    //   title: 'UI/UX Design',
+    //   description: 'Skilled in creating intuitive and visually appealing user interfaces.',
+    // },
     {
       title: 'Mobile Development',
-      description: 'Experienced in mobile app development using React Native, a popular framework for building cross-platform applications. Proficient in creating engaging user interfaces, integrating APIs, and leveraging device features to develop robust and user-friendly mobile applications.',
+      description: 'Experienced in mobile app development using React Native. Proficient in creating engaging user interfaces, integrating APIs, and leveraging device features to develop robust and user-friendly mobile applications.',
     },
-    
+
   ];
   return (
     <section id="skills" className="bg-gray-100 py-32 md:py-16 ">

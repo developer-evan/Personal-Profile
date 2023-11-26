@@ -7,8 +7,8 @@ function About() {
       <div className="flex justify-center items-center h-screen bg-slate-300">
         <div className="w-full max-w-5xl p-6 bg-slate-300 rounded-lg shadow-md flex flex-wrap">
           <div className="w-full md:w-1/2 md:pr-6">
-            <h1 className="text-sky-600 text-4xl">About</h1>
-            <div className="flex justify-between items-center mb-4">
+            <h1 className="text-sky-600 mb-2 text-4xl">About</h1>
+            <div className="flex justify-center items-center mb-4">
               <img
                 src="./assets/abouu.jpg"
                 alt="about"
@@ -30,8 +30,8 @@ function About() {
                 What sets me apart from other candidates:
               </p>
             </div>
-            <button className="bg-sky-600 rounded-xl   hover:bg-white hover:text-sky-600 hover:border hover:border-sky-600  p-2 mt-6">
-              <a href="#work-projects" className="items-center text-white hover:text-sky-600 flex">
+            <button className="bg-sky-600 rounded-xl  text-white hover:bg-white hover: hover:text-sky-600 hover:border hover:border-sky-600  p-2 mt-6">
+              <a href="#work-projects" className="items-center  hover:text-sky-600 flex">
                 Check out my Projects <FaArrowRight className="ml-2" />
               </a>
             </button>
