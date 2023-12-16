@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about">
       <div className="flex justify-center items-center h-screen bg-slate-300">
-        <div className="w-full max-w-5xl p-6 bg-slate-300 rounded-lg shadow-md flex flex-wrap">
+        <div className="w-full max-w-5xl p-4 bg-slate-300 rounded-lg shadow-md flex flex-wrap">
           <div className="w-full md:w-1/2 md:pr-6">
             <h1 className="text-sky-600 mb-2 text-4xl">About</h1>
             <div className="flex justify-center items-center mb-4">

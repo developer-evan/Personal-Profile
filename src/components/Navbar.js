@@ -78,7 +78,9 @@ function Navbar() {
 
       </ul>
       <button className='hidden md:block bg-sky-600 text-white px-3 py-1'>
-        Resume
+        <a href='https://docs.google.com/document/d/1cc8bcvmQUQ9ox1PMmlMC7C3UUzSWAWqc/edit?usp=sharing&ouid=117172547502764936081&rtpof=true&sd=true'  >
+          Resume
+        </a>
       </button>
     </div>
   );
