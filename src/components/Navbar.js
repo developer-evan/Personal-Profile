@@ -46,38 +46,38 @@ function Navbar() {
       <ul
         className={`${
           menuOpen ? 'block' : 'hidden'
-        } md:flex md:w-auto text-start bg-slate-300 p-4 md:p-0 md:static md:space-x-4`}
+        } md:flex md:w-auto text-start bg-slate-300 p-4 md:p-0 md:static md:space-x-4 space-y-8 md:space-y-0 `}
       >
-     <a href='#home'  >      
-      <li className='mx-4 font-bold' onClick={closeMenu}>
+     <a href='#home'>      
+      <li className='mx-4   ' onClick={closeMenu}>
           Home
         </li>
         </a>
 
         <a href='#work-projects'  > 
-        <li className='mx-4 font-bold' onClick={closeMenu}>
+        <li className='mx-4 ' onClick={closeMenu}>
           Work
         </li>
         </a>
         <a href='#skills'  > 
-        <li className='mx-4 font-bold' onClick={closeMenu}>
+        <li className='mx-4 ' onClick={closeMenu}>
           Skills
         </li>
         </a>
         <a href='#about'  > 
-        <li className='mx-4 font-bold' onClick={closeMenu}>
+        <li className='mx-4 ' onClick={closeMenu}>
           About
         </li>
         </a>
         <a href='#contact'  > 
-        <li className='mx-4 font-bold' onClick={closeMenu}>
+        <li className='mx-4 ' onClick={closeMenu}>
           Contact
         </li>
         </a>
 
 
       </ul>
-      <button className='hidden md:block bg-sky-600 text-white px-3 py-1'>
+      <button className='hidden md:block bg-sky-600 text-white px-3 py-1 rounded-md'>
         <a href='https://docs.google.com/document/d/1cc8bcvmQUQ9ox1PMmlMC7C3UUzSWAWqc/edit?usp=sharing&ouid=117172547502764936081&rtpof=true&sd=true'  >
           Resume
         </a>

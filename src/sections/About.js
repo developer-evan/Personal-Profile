@@ -1,44 +1,115 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 function About() {
+  const [isReactOpen, setIsReactOpen] = useState(false);
+  const [isFrontEndOpen, setIsFrontEndOpen] = useState(false);
+  const [isToolsOpen, setIsToolsOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
+  const toggleFrontEnd = () => {
+    setIsReactOpen(false);
+    setIsFrontEndOpen(!isFrontEndOpen);
+    setIsToolsOpen(false);
+    setIsMobileOpen(false);
+  };
+
+  const toggleTools = () => {
+    setIsReactOpen(false);
+    setIsFrontEndOpen(false);
+    setIsToolsOpen(!isToolsOpen);
+    setIsMobileOpen(false);
+  };
+
+  const toggleMobile = () => {
+    setIsReactOpen(false);
+    setIsFrontEndOpen(false);
+    setIsToolsOpen(false);
+    setIsMobileOpen(!isMobileOpen);
+  };
+
   return (
-    <section id="about">
-      <div className="flex justify-center items-center h-screen bg-slate-300">
-        <div className="w-full max-w-5xl p-4 bg-slate-300 rounded-lg shadow-md flex flex-wrap">
-          <div className="w-full md:w-1/2 md:pr-6">
-            <h1 className="text-sky-600 mb-2 text-4xl">About</h1>
-            <div className="flex justify-center items-center mb-4">
-              <img
-                src="./assets/abouu.jpg"
-                alt="about"
-                width={350}
-                height={350}
-                className="md:hidden rounded-md shadow-md"
-              />
-            </div>
+    <section id="about" className="bg-slate-300 p-2 my-auto py-8 ">
+      <h1 className="font-semibold mb-4 text-4xl">About Me</h1>
+      <div className="flex justify-center items-center  ">
+        
+        <div className="w-full max-w-5xl   flex flex-wrap bg-slate-300">
+          <div className="w-full md:w-1/2 md:pr-6 order-2">
+            
+           
             <p className="text-gray-800 text-start">
               I'm a Front End Engineer and Software Engineer with a focus on
               creating responsive and highly interactive web/mobile
               applications. I am well versed in best practices for front end
               development using JavaScript (React, Vanilla) and Mobile
               Development (React Native) and User Interaction. I have built
-              frontend projects that aim at changing the world..
+              frontend projects that aim at changing the world.
             </p>
-            <div className="mt-4">
+            
+            <div className="mt-6">
               <p className="font-semibold text-gray-800">
-                What sets me apart from other candidates:
+              Proficiencies :
               </p>
+              <div className="flex flex-wrap mb-4">
+                <button
+                  className={`mb-2 mr-4 focus:outline-none ${isFrontEndOpen ? "text-sky-600 font-medium" : "text-slate-500"}`}
+                  onClick={toggleFrontEnd}
+                >
+                  Languages 
+                </button>
+                <button
+                  className={` mb-2 mr-4 focus:outline-none ${isMobileOpen ? "text-sky-600 font-medium" : "text-slate-500"}`}
+                  onClick={toggleMobile}
+                >
+                  Frameworks & Libraries
+                </button>
+                <button
+                  className={` mb-2 focus:outline-none ${isToolsOpen ? "text-sky-600 font-medium" : "text-slate-500"}`}
+                  onClick={toggleTools}
+                >
+                  Tools & Others
+                </button>
+              </div>
+
+              {isFrontEndOpen && (
+                <ul className="list-disc list-inside ml-4 flex flex-wrap gap-2 items-start">
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">HTML</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">CSS</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">JavaScript</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">TypeScript</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Dart</li>
+                </ul>
+              )}
+
+              {isMobileOpen && (
+                <ul className="list-disc list-inside ml-4 items-start flex flex-wrap gap-2">
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">React Native</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Flutter</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">React</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Angular</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Next</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Tailwind CSS</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Bootstrap</li>
+                </ul>
+              )}
+
+              {isToolsOpen && (
+                <ul className="list-disc list-inside ml-4  flex flex-wrap gap-2 items-start">
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Git</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">GitHub</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Firebase</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Netlify</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Vercel</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Trello</li>
+                  <li className="list-none text-start bg-sky-500 text-white px-2  py-1 rounded-xl">Jira</li>
+                </ul>
+              )}
             </div>
-            <button className="bg-sky-600 rounded-xl  text-white hover:bg-white hover: hover:text-sky-600 hover:border hover:border-sky-600  p-2 mt-6">
-              <a href="#work-projects" className="items-center  hover:text-sky-600 flex">
-                Check out my Projects <FaArrowRight className="ml-2" />
-              </a>
-            </button>
           </div>
-          <div className="hidden md:block md:w-1/2">
+         
+          <div className="flex justify-center items-center mx-auto order-1">
             <img
-              src="./assets/abouu.jpg"
+              src="./assets/passp.png"
               alt="about"
               width={350}
               height={350}

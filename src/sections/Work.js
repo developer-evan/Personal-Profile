@@ -3,6 +3,7 @@ import React from 'react';
 const Work = () => {
   const projects = [
     {
+      image: './assets/abouu.jpg',
       title: 'Portfolio Website',
       description: 'Designed and developed my personal portfolio website using React and Tailwind CSS.',
       url: 'https://developer-evan-profile.vercel.app/',
@@ -13,21 +14,25 @@ const Work = () => {
     //   url: 'https://online-shoe-shop.vercel.app/',
     // },
     {
+image: './assets/abouu.jpg',
       title: 'Fitness and Health Monitoring  App',
       description: 'Developed a mobile  application to enhance workout for fitness and health monitoring with React Native and Firebase.',
       url: ' https://drive.google.com/file/d/1YahaDYO8bnsoepGUaQNPO7-JCO4E7ZCO/view?usp=sharing',
     },
     {
+      image: './assets/abouu.jpg',
       title: 'Vessel Global Systems Website',
       description: 'Designed and developed a website for a company using Next and Tailwind CSS.',
       url: 'https://www.vesselsystems.co.ke/'
     },
     {
+      image: './assets/abouu.jpg',
 title: 'Cumulus  Website',
 description: 'Designed and developed a website for a company using Next Typescript and Tailwind CSS.',
 url: 'https://cumuluske.co.ke/'
     },
     {
+      image: './assets/abouu.jpg',
       title: 'Unity Solutions Writers Website',
       description: 'I developed a writers website with admin and user dashboard using React.js and Tailwind CSS, integrating it with a Rest API. ',
       url: 'https://unitysolutionstutors.com/'
@@ -42,6 +47,7 @@ url: 'https://cumuluske.co.ke/'
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="p-4 border border-gray-300 rounded-lg shadow-md">
+              <img src={project.image} alt={project.title} className="w-full h-40 object-cover mb-4 rounded-lg" />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-700">{project.description}</p>
               <a
