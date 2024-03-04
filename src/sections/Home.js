@@ -22,34 +22,39 @@ function Home() {
           applications while learning & exploring other technologies.
         </p>
         <div className="flex justify-center mt-14">
-          <div className=" bg-sky-600 text-3xl text-white  rounded-full w-14 h-14 p-4 mx-2 flex justify-center items-center shadow-md hover:translate-y-2">
+          {/* <div className=" bg-sky-600 text-3xl text-white  rounded-full w-14 h-14 p-4 mx-2 flex justify-center items-center shadow-md hover:translate-y-2">
             <a href="/" target="_blank" rel="noreferrer">
               <FaFacebook />
             </a>
-          </div>
-          <div className="bg-sky-600 text-3xl text-white  rounded-full w-14 h-14 p-4 mx-2 flex justify-center items-center shadow-md hover:translate-y-2">
+          </div> */}
+          <p className="bg-sky-600 text-white pr-16 rounded-full  mx-2 flex justify-center items-center shadow-md transform transition-transform hover:scale-105">
             <a
               href="https://github.com/developer-evan"
               target="_blank"
               rel="noreferrer"
+              className="flex items-center space-x-1 px-2 md:px-4 py-2"
             >
-              <FaGithub />
+              <FaGithub className="text-3xl" />
+              <span className="sm:inline">GitHub</span>
             </a>
-          </div>
-          <div className="bg-sky-600 text-3xl text-white rounded-full w-14 h-14 p-4 mx-2 flex justify-center items-center shadow-md hover:translate-y-2">
+          </p>
+
+          <p className="bg-sky-600 text-white pr-12 rounded-full mx-2 flex justify-center items-center shadow-md transform transition-transform hover:scale-105">
             <a
-              href=" https://www.linkedin.com/in/ëvans-mogeni-a48636235"
+              href="https://www.linkedin.com/in/evans-mogeni-a48636235/"
               target="_blank"
               rel="noreferrer"
+              className="flex items-center space-x-1 px-2 md:px-4 py-2"
             >
-              <FaLinkedinIn />
+              <FaLinkedinIn className="text-3xl" />
+              <span className="sm:inline">LinkedIn</span>
             </a>
-          </div>
-          <a href="/" target="_blank" rel="noreferrer">
+          </p>
+          {/* <a href="/" target="_blank" rel="noreferrer">
             <div className=" bg-sky-600 text-3xl text-white  rounded-full w-14 h-14 p-4 mx-2 flex justify-center items-center shadow-md hover:translate-y-2">
               <FaInstagram />
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

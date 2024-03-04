@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaWhatsapp,FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   const menuItems = [
